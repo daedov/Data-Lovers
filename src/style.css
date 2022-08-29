@@ -1,0 +1,281 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Homemade+Apple&family=Red+Hat+Display:wght@300;400;500;600;700&display=swap");
+/* ------ css variables ------ */
+:root {
+  /* --colors-- */
+  --title-color: #fc753a;
+  --text-color: #b86846;
+  --border-color: #f86121;
+  --body-color: #1c1e1e;
+  --body-extra-color: #f5dfd6;
+  --hover-color: #f0966f;
+  --light-extra-color: #f0ab8d;
+  --dark-extra-color: #ff9f72;
+  /* --font and typography-- */
+  --body-font: "Red Hat Display", sans-serif;
+  --footer-font: "Homemade Apple", cursive;
+  --biggest-font-size: 5rem;
+  --big-font-size: 2.5rem;
+  --medium-font-size: 1.5rem;
+  --normal-font-size: 1.2rem;
+  --small-font-size: .986rem;
+  --smaller-font-size: .8rem;
+  /* --font weight-- */
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+}
+/* --base-- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--body-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  color: var(--text-color);
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+/* --header-- */
+.nav-logo,
+.nav-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-logo {
+  background-color: rgba(65, 62, 62, 0.3);
+  border-radius: 1em;
+  width: 100%;
+}
+#logo {
+  width: 20em;
+}
+h1 {
+  position: absolute;
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  color: var(--title-color);
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+h2 {
+  position: relative;
+  margin-top: 6em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+h3 {
+  font-size: var(--normal-font-size);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 2em;
+  color: var(--title-color);
+}
+#women-text {
+  position: relative;
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 2em;
+}
+/* --select nav-- */
+.select-data ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: .8em;
+  margin-bottom: 2em;
+  text-align: center;
+  justify-content: center;
+  font-weight: var(--font-semi-bold);
+  font-size: var(--smaller-font-size);
+  border-radius: .8em;
+}
+.select-data ul li {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  font-size: var(--smaller-font-size);
+  margin: 0.3em;
+}
+select,
+input,
+option,
+button {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 14em;
+  height: 3.5em;
+  padding: .9em;
+  background-color: var(--body-extra-color);
+  border-color: var(--title-color);
+  border-radius: 12px;
+  font-weight: var(--font-semi-bold);
+  color: var(--basic-color-2);
+  font-size: var(--smaller-font-size);
+}
+main {
+  background-color: rgba(65, 62, 62, 0.3);
+  border-radius: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.containerMain {
+  display: inline-block;
+  letter-spacing: 1.5px;
+  font-weight: var(--font-bold);
+  color: var(--border-color);
+}
+.boxTable {
+  padding: 0.8em;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.boxTable tr {
+  text-align: center;
+  height: 3em;
+  border-collapse: collapse;
+  border: 1px solid var(--title-color);
+}
+.boxTable td {
+  width: 17em;
+}
+.large-td {
+  width: 25em;
+}
+.boxTable thead {
+  background-color: var(--light-extra-color);
+  font-weight: var(--font-semi-bold);
+  font-size: var(--normal-font-size);
+  color: var(--basic-color-2);
+  text-transform: uppercase;
+}
+.boxTable table tr:hover {
+  background-color: var(--hover-color);
+  color: var(--body-color);
+  font-weight: var(--font-bold );
+}
+/**** Footer ****/
+.footer {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgb(37, 37, 37);
+  text-align: center;
+  font-family: var(--footer-font);
+  font-size: var(--small-font-size);
+  color: var(--body-extra-color);
+  border-radius: .8em;
+}
+/* --animation title-- */
+.display-title-page {
+  -webkit-animation: display-title-page 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: display-title-page 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@-webkit-keyframes display-title-page {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes display-title-page {
+  0% {
+    letter-spacing: 1em;
+    -webkit-transform: translateZ(300px);
+    transform: translateZ(300px);
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(12px);
+    transform: translateZ(12px);
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+/* --heart decoration-- */
+.heart-icon {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+.heart-icon div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: var(--hover-color);
+  animation: heart-icon 3s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.heart-icon div:after,
+.heart-icon div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: var(--hover-color);
+}
+.heart-icon div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.heart-icon div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes heart-icon {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

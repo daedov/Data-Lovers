@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OlimpicWomen</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body>
+  <header class="nav-bar">
+    <div class="nav-logo">
+      <img src="/img/logo.png" alt="logotipo" id="logo" />
+    </div>
+    <div class="heart-icon">
+      <div></div>
+    </div>
+    <div class="nav-title">
+      <h1 class="display-title-page">OlimpicWomen</h1>
+      <div>
+        <h2>Rio de Janeiro Olympics 2016</h2>
+        <p id="women-text">The first participation of a woman in the Olympic Games was in 1900 in the disciplines of tennis and golf. In more than a century have come to represent almost half of the total number of participants. The 2012 Games in london were the first in which all countries had a woman among their athletes. In the Rio de Janeiro 2016 edition, 45% of the participants were women, that means around 5600 ladies arrived to Brazil.</p>
+      </div>
+    </div>
+  </header>
+  <section>
+    <nav class="select-data">
+      <ul>
+        <li><button id="display-data">View All</button></li>
+        <li><button id="filter-sport">View by Sport</button></li>
+        <li><button id="filter-height">View by Height and Weight</button></li>
+        <li><button id="order-up">View Athletes A-Z</button></li>
+        <li><button id="order-down">View Athletes Z-A</button></li>
+      </ul>
+    </nav>
+  </section>
+  <main>
+    <section class="containerMain boxTable"></section>
+    <section class="containerViewAll boxTable"></section>
+    <section class="containerFilterHeight boxTable"></section>
+    <section class="containerFilterSport boxTable"></section>
+    <section class="containerSort boxTable"></section>
+  </main>
+  <!-- Footer -->
+  <footer class="footer">
+    <p> Made with ❤ by @daedov</p>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
